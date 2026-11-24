@@ -1,14 +1,14 @@
 ---
-summary: TikTok起号冷启动数据源（只读）：作品详情、视频评论、博主作品、关键词搜视频，输出结构化JSON供AI做海外新账号定位与冷启动规划。用于对标账号取样、人设与内容方向确定、首批选题池搭建、首月发布排期。触发词：TikTok起号、TikTok冷启动、新号定位、tiktok launch、tiktok cold start。
-displayName: TikTok起号冷启动｜账号定位·对标取样·内容规划·首月排期
+summary: TikTok冷启动数据源（只读）：作品详情、视频评论、博主作品、关键词搜视频，输出结构化JSON供AI做海外新账号定位与冷启动规划。用于对标账号取样、人设与内容方向确定、首批选题池搭建、首月发布排期。触发词：TikTok起号、TikTok冷启动、新号定位、tiktok launch、tiktok cold start。
+displayName: TikTok冷启动｜账号定位·对标取样·内容规划·首月排期
 slug: tt-launch
 name: tt-launch
-description: "TikTok起号冷启动数据源（只读）：关键词搜视频、博主作品、视频评论，输出 JSON，不登录不发布。触发词：TikTok、tiktok、抖音国际版、TikTok搜索、TikTok评论、TikTok博主。用户要查 TikTok 视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、快手、B站、微博、公众号不要用本技能。"
+description: "TikTok冷启动数据源（只读）：关键词搜视频、博主作品、视频评论，输出 JSON，不登录不发布。触发词：TikTok、tiktok、抖音国际版、TikTok搜索、TikTok评论、TikTok博主。用户要查 TikTok 视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
-display_name: "TikTok起号冷启动｜账号定位·对标取样·内容规划·首月排期"
+display_name: "TikTok冷启动｜账号定位·对标取样·内容规划·首月排期"
 display_name_en: "TikTok Launch"
-description_zh: "TikTok起号冷启动数据源（只读，无需登录）：关键词搜索视频、博主作品与粉丝互动数据、单条作品详情、视频评论，全部输出结构化 JSON。用于海外新账号定位与对标取样、人设与内容方向确定、首批选题池搭建、首月发布排期。支持相关度/最多点赞、最新/最热排序，以及近 1 日到近 6 月时间窗筛选；按量 Token 单次最多 10000 条，包月搜索与作品最多 30、评论最多 40，超限返回 PLAN_LIMIT。不登录、不发布、不点赞、不评论，无封号风险；零第三方依赖，Node.js 16.14+ 直接运行。触发词：TikTok起号、TikTok冷启动、新号定位、对标账号、选题规划。"
+description_zh: "TikTok冷启动数据源（只读，无需登录）：关键词搜索视频、博主作品与粉丝互动数据、单条作品详情、视频评论，全部输出结构化 JSON。用于海外新账号定位与对标取样、人设与内容方向确定、首批选题池搭建、首月发布排期。支持相关度/最多点赞、最新/最热排序，以及近 1 日到近 6 月时间窗筛选；按量 Token 单次最多 10000 条，包月搜索与作品最多 30、评论最多 40，超限返回 PLAN_LIMIT。不登录、不发布、不点赞、不评论，无封号风险；零第三方依赖，Node.js 16.14+ 直接运行。触发词：TikTok起号、TikTok冷启动、新号定位、对标账号、选题规划。"
 description_en: "TikTok cold-start data source for new-account launch planning - read-only, no login required. It provides keyword video search with relevance or most-liked sorting plus time-window filters, creator works with follower and engagement metrics, single-video detail and video comments, all returned as structured JSON for AI analysis. Use it to define an overseas new account's positioning, sample benchmark creators, choose persona and content direction, build a first batch of topics and plan the first-month publishing calendar. Hard limit is 10,000 items per call; monthly plans cap keyword search and creator works at 30 and comments at 40 (over-limit returns PLAN_LIMIT). It never logs in, publishes, likes or comments, so there is no account risk. Zero dependencies, runs on Node.js 16.14+."
 author: "新郑市怪奇信息技术工作室"
 metadata:
@@ -81,7 +81,7 @@ metadata:
     - "盯一下这个竞品账号最近发了什么 → node scripts/tiktok/post-cli.js --url \"https://www.tiktok.com/@competitor\" --limit 10"
 ---
 
-# 🎵 TikTok起号冷启动 · 功能列表 (TikTok Account Launch)
+# 🎵 TikTok冷启动 · 功能列表 (TikTok Account Launch)
 
 给一个关键词或一条链接，拿回 TikTok 公开视频和评论。不登录，不发布。结果是一份 JSON。
 
